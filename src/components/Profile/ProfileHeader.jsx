@@ -60,21 +60,23 @@ const ProfileHeader = ({ otheruser }) => {
 							</div>
 						)}
 					</div>
-					{locationProfile ? (
-						''
-					) : (
-						<>
-							<p>{locationProfile ? otherUser.name : user.user.name}</p>
-						</>
-					)}
+
+					<>
+						<p>{locationProfile ? otherUser.name : user.user.name}</p>
+					</>
 				</div>
 				<div className='right-container'>
 					<div className='top-section'>
-						<button
-							className='btn'
-							onClick={toggleEditProfileHandler}>
-							EDIT PROFILE
-						</button>
+						{locationProfile ? (
+							<></>
+						) : (
+							<button
+								className='btn'
+								onClick={toggleEditProfileHandler}>
+								EDIT PROFILE
+							</button>
+						)}
+
 						<p className='name'>{locationProfile ? otherUser.username : user.user.username}</p>
 					</div>
 				</div>

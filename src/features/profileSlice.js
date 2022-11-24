@@ -4,7 +4,7 @@ import { toast } from 'react-toastify'
 import { addUserToLocalStorage, removeUserFromLocalStorage } from '../utils/localStorage'
 import { editProfileToggleHandle } from './postSlice'
 
-const url = 'https://photobook-api-server.vercel.app/api/v1/profile'
+const url = 'https://photobook-api-server.onrender.com/api/v1/profile'
 
 const initialState = {
 	name: '',

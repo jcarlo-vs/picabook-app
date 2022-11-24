@@ -3,7 +3,7 @@ import axios from 'axios'
 import { toast } from 'react-toastify'
 import { addUserToLocalStorage, getUserFromLocalStorage, removeUserFromLocalStorage } from '../utils/localStorage'
 
-const url = 'https://photobook-api-server.onrender.com/api/v1/auth'
+const url = 'https://photobook-api-server.vercel.app/api/v1/auth'
 
 const initialState = {
 	user: getUserFromLocalStorage(),

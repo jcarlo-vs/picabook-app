@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import axios from 'axios'
 
-const url = 'https://photobook-api-server.onrender.com/api/v1/posts'
+const url = 'https://photobook-api-server.vercel.app/api/v1/posts'
 
 const initialState = {
 	otherUser: {},
